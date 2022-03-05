@@ -17,8 +17,6 @@ impl Config {
 
         let case_sensitive = env::var("CASE_INSENSITIVE").is_err();
 
-        println!("case sensitive: {}", case_sensitive);
-
         Ok(Config {
             query,
             filename,
